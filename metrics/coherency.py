@@ -1,8 +1,13 @@
 from scipy import stats as STS
+import torch
 
-def coherency(saliency_map, explanation_map, arch, attr_method, class_idx=None):
+def coherency(saliency_map, explanation_map, arch, attr_method, out):
+    if torch.cuda.is_available():
+        explanation_map = explanation_map.cuda()
+        arch = arch.cuda()
 
-    saliency_map_B=attr_method(explanation_map,arch,class_idx)
+    class_idx = out.max(1)[1].item()
+    saliency_map_B=attr_method(image=explanation_map, model=arch, classidx=class_idx)
 
     A, B = saliency_map.detach(), saliency_map_B.detach()
 
