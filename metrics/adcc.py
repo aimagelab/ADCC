@@ -16,6 +16,6 @@ def ADCC(image, saliency_map, explanation_map,arch,attr_method,target_class_idx=
     com=complexity.complexity(saliency_map)
 
 
-    adcc = 3 * (1/coh + 1/(1-com) +1/(1-avgdrop))
+    adcc = 3 / (1/coh + 1/(1-com) +1/(1-avgdrop))
 
     return adcc

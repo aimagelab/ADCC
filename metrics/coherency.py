@@ -15,6 +15,10 @@ def coherency(saliency_map, explanation_map, arch, attr_method, out):
     # Pearson correlation coefficient
     # '''
     Asq, Bsq = A.view(1, -1).squeeze(0).cpu(), B.view(1, -1).squeeze(0).cpu()
+
+    import os
+    os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+
     y, _ = STS.pearsonr(Asq, Bsq)
     y = abs(y)
 

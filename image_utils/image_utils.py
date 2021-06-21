@@ -28,14 +28,18 @@ def detransform(tensor):
     return denormalized
 
 
-def load_image(image_path):
-    return IMAGE.open(image_path).convert('RGB')
+def load_image(image_path,rgb=False):
+    if rgb:
+        return IMAGE.open(image_path).convert('RGB')
+    else:
+        return IMAGE.open(image_path).convert('L')
 
 def images_to_tensors(opt):
-    image=load_image(opt.image)
+
+    image=load_image(opt.image,rgb=True)
     saliency_map=load_image(opt.saliency_map)
 
     image=apply_transform(image)
-    saliency_map=apply_transform(saliency_map)
+    saliency_map=transforms.ToTensor()(saliency_map)
 
     return image, saliency_map, image * saliency_map
