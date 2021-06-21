@@ -31,5 +31,8 @@ main.py --image [path-to-input-image,str] --model[name-of-the-CNN,str]
 ##### Use it as a module
 The ADCC module provides all the computation needed to return the final score, given the 5 inputs previously mentioned.
 
+##### What it returns
+The ADCC module simply returns the ADCC score in [0,1] range
+
 For any info contact samuele.poppi@unimore.it (with subject "ADCC GitHub Repo")
 
