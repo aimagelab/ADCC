@@ -34,12 +34,10 @@ def load_image(image_path,rgb=False):
     else:
         return IMAGE.open(image_path).convert('L')
 
-def images_to_tensors(opt):
+def image_to_tensors(opt):
 
     image=load_image(opt.image,rgb=True)
-    saliency_map=load_image(opt.saliency_map)
 
     image=apply_transform(image)
-    saliency_map=transforms.ToTensor()(saliency_map)
 
-    return image, saliency_map, image * saliency_map
+    return image
