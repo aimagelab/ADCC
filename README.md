@@ -34,5 +34,5 @@ The ADCC module provides all the computation needed to return the final score, g
 ##### What it returns
 The ADCC module simply returns the ADCC score in [0,1] range
 
-For any info contact [samuele.poppi@unimore.it](mailto:samuele.poppi@unimore.it?subject=ADCC%20GitHub%20Repo])
+For any info contact [samuele.poppi@unimore.it](mailto:samuele.poppi@unimore.it?subject=ADCC%20GitHub%20Repo)
 
