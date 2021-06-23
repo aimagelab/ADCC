@@ -25,7 +25,7 @@ main.py
 
 Using custom parameters
 ```shell
-main.py --image [path-to-input-image,str] --model[name-of-the-CNN,str]
+main.py --image [path-to-input-image,str] --model [name-of-the-CNN,str]
 ```
 
 ##### Use it as a module
