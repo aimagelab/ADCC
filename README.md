@@ -1,6 +1,6 @@
 # ADCC
 
-##### Original Implementation of the paper Revisiting The Evaluation of Class Activation Mapping for Explainability: A Novel Metric and Experimental Analysis, appeared at CVPRW'2021 Responsible Computer Vision as oral and poster presentation.
+##### Original Implementation of the paper ###Revisiting The Evaluation of Class Activation Mapping for Explainability: A Novel Metric and Experimental Analysis###, appeared at #####CVPRW'2021 Responsible Computer Vision##### as oral and poster presentation.
 
 ADCC is a more solid and unbiased benchmark for evaluating CAMs for explainability purposes.
 It considers more than one aspect of how is the resulting saliency map (read the [paper](https://openaccess.thecvf.com/content/CVPR2021W/RCV/html/Poppi_Revisiting_the_Evaluation_of_Class_Activation_Mapping_for_Explainability_A_CVPRW_2021_paper.html) for a more detailed overview)
