@@ -34,10 +34,10 @@ The ADCC module provides all the computation needed to return the final score, g
 ##### What it returns
 The ADCC module simply returns the ADCC score in [0,1] range
 
-##### Other infos
+### Other infos
 This repo is implemented in PyTorch
 
-##### If you use this repo in your publication please cite
+### If you use this repo in your publication please cite
 
 ```
 @inproceedings{poppi2021revisiting,
