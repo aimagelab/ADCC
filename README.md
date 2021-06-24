@@ -37,5 +37,16 @@ The ADCC module simply returns the ADCC score in [0,1] range
 ##### Other infos
 This repo is implemented in PyTorch
 
+##### If you use this repo please cite
+
+```
+@inproceedings{poppi2021revisiting,
+  title={Revisiting The Evaluation of Class Activation Mapping for Explainability: A Novel Metric and Experimental Analysis},
+  author={Poppi, Samuele and Cornia, Marcella and Baraldi, Lorenzo and Cucchiara, Rita},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  year={2021}
+}
+```
+
 For any info contact [samuele.poppi@unimore.it](mailto:samuele.poppi@unimore.it?subject=ADCC%20GitHub%20Repo)
 
