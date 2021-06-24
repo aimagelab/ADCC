@@ -8,7 +8,7 @@ import torch
 import torch.nn.functional as F
 
 def ScoreCAM_extracor(image,model,classidx=None):
-    scam=CAMS.ScoreCAM(model,'layer4')
+    scam=CAMS.ScoreCAM(model)
     with torch.no_grad(): out = model(image)
 
     if classidx is None:
@@ -44,5 +44,6 @@ if __name__ == '__main__':
 
     assert OSPATH.exists(opt.image), "Image not found"
 
-    main(opt)
+    adcc=main(opt)
+    print('finish')
 

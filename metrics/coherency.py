@@ -19,7 +19,13 @@ def coherency(saliency_map, explanation_map, arch, attr_method, out):
     import os
     os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
-    y, _ = STS.pearsonr(Asq, Bsq)
-    y = abs(y)
+    if torch.tensor(Asq).isnan().any() or torch.tensor(Bsq).isnan().any():
+        y = 0.
+    else:
+        y, _ = STS.pearsonr(Asq, Bsq)
+        y = (y + 1) / 2
+
+
+
 
     return y
