@@ -37,7 +37,7 @@ The ADCC module simply returns the ADCC score in [0,1] range
 ##### Other infos
 This repo is implemented in PyTorch
 
-##### If you use this repo please cite
+##### If you use this repo in your publication please cite
 
 ```
 @inproceedings{poppi2021revisiting,
