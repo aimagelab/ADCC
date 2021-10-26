@@ -28,4 +28,4 @@ def coherency(saliency_map, explanation_map, arch, attr_method, out):
 
 
 
-    return y
+    return y,A,B
